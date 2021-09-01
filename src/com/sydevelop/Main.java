@@ -13,10 +13,19 @@ public class Main {
 //        MegaBytesConverter.printMegaBytesAndKiloBytes(-1024);
 //        MegaBytesConverter.printMegaBytesAndKiloBytes(5000);
 
-        BarkingDog.shouldWakeUp(true,1);
-        BarkingDog.shouldWakeUp(false,2);
-        BarkingDog.shouldWakeUp(true,8);
-        BarkingDog.shouldWakeUp(true,-1);
+//        BarkingDog.shouldWakeUp(true,1);
+//        BarkingDog.shouldWakeUp(false,2);
+//        BarkingDog.shouldWakeUp(true,8);
+//        BarkingDog.shouldWakeUp(true,-1);
+
+        double myResult = MethodOverloading.calcFeetAndInchesToCentimenters(16,0);
+
+        System.out.println(16 + " Ft = " + myResult + " Cm");
+
+        double mySecondResult = MethodOverloading.calcFeetAndInchesToCentimenters(myResult);
+
+        System.out.println(myResult + " Cm = " + mySecondResult + " Ft");
+
     }
 
 }
