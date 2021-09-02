@@ -8,6 +8,9 @@ public class MethodOverloading {
             return -1;
         }else{
             return ((feet * 12) + inches) * 2.54;
+            // Tim Solution
+            // double cm = (feet * 12) * 2.54
+            // cm += inches * 2.54
         }
     }
 
@@ -17,6 +20,9 @@ public class MethodOverloading {
             return -1;
         }else{
             return inches * 0.032808;
+            // tim solution
+            // double feet = (int) inches / 12
+            // double remainInches = (int) inches % 12;
         }
     }
 }

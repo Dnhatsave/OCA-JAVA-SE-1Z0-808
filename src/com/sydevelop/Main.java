@@ -18,13 +18,16 @@ public class Main {
 //        BarkingDog.shouldWakeUp(true,8);
 //        BarkingDog.shouldWakeUp(true,-1);
 
-        double myResult = MethodOverloading.calcFeetAndInchesToCentimenters(16,0);
+//        double myResult = MethodOverloading.calcFeetAndInchesToCentimenters(16,0);
+//
+//        System.out.println(16 + " Ft = " + myResult + " Cm");
+//
+//        double mySecondResult = MethodOverloading.calcFeetAndInchesToCentimenters(myResult);
+//
+//        System.out.println(myResult + " Cm = " + mySecondResult + " Ft");
 
-        System.out.println(16 + " Ft = " + myResult + " Cm");
-
-        double mySecondResult = MethodOverloading.calcFeetAndInchesToCentimenters(myResult);
-
-        System.out.println(myResult + " Cm = " + mySecondResult + " Ft");
+        SecondsMinutes.getDurationString(61,0);
+        SecondsMinutes.getDurationString(3600);
 
     }
 
