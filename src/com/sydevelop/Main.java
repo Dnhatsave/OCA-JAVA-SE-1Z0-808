@@ -29,10 +29,14 @@ public class Main {
 //        SecondsMinutes.getDurationString(65,0);
 //        SecondsMinutes.getDurationString(3600);
 
-        System.out.println(AreaCalculator.area(5.0));
-        System.out.println(AreaCalculator.area(-1));
-        System.out.println(AreaCalculator.area(5.0, 4.0));
-        System.out.println(AreaCalculator.area(-1.0, 4.0));
+//        System.out.println(AreaCalculator.area(5.0));
+//        System.out.println(AreaCalculator.area(-1));
+//        System.out.println(AreaCalculator.area(5.0, 4.0));
+//        System.out.println(AreaCalculator.area(-1.0, 4.0));
+
+        MinutesToYear.printYearsAndDays(525600);
+        MinutesToYear.printYearsAndDays(1051200);
+        MinutesToYear.printYearsAndDays(561600);
 
     }
 
