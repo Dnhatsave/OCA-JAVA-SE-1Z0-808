@@ -4,7 +4,7 @@ public class SecondsMinutes {
 
     public static void getDurationString(int minutes, int seconds){
 
-        if(minutes < 0 || (seconds < 0 || seconds > 60)){
+        if(minutes < 0 || (seconds < 0 || seconds > 59)){
             System.out.println("Invalid value");
         }else{
             int hours = minutes / 60;

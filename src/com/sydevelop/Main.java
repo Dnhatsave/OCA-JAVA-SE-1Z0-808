@@ -26,8 +26,13 @@ public class Main {
 //
 //        System.out.println(myResult + " Cm = " + mySecondResult + " Ft");
 
-        SecondsMinutes.getDurationString(61,0);
-        SecondsMinutes.getDurationString(3600);
+//        SecondsMinutes.getDurationString(65,0);
+//        SecondsMinutes.getDurationString(3600);
+
+        System.out.println(AreaCalculator.area(5.0));
+        System.out.println(AreaCalculator.area(-1));
+        System.out.println(AreaCalculator.area(5.0, 4.0));
+        System.out.println(AreaCalculator.area(-1.0, 4.0));
 
     }
 
