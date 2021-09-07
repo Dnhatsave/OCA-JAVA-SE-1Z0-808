@@ -48,30 +48,28 @@ public class Main {
 //        PlayingCat.isCatPlaying(false,35);
 
 
-        char letter = 'F';
+//        char letter = 'F';
+//
+//        switch (letter){
+//            case 'A':
+//                System.out.println(showMessage(letter));
+//                break;
+//            case 'B':
+//                System.out.println(showMessage(letter));
+//                break;
+//            case 'C': case 'D': case 'E':
+//                System.out.println(showMessage(letter));
+//                break;
+//            default:
+//                System.out.println("Letter not found try again!");
+//        }
 
-        switch (letter){
-            case 'A':
-                System.out.println(showMessage(letter));
-                break;
-            case 'B':
-                System.out.println(showMessage(letter));
-                break;
-            case 'C':
-                System.out.println(showMessage(letter));
-                break;
-            case 'D':
-                System.out.println(showMessage(letter));
-                break;
-            case 'E':
-                System.out.println(showMessage(letter));
-                break;
-            default:
-                System.out.println("Letter not found try again!");
-        }
+
+        DayOfTheWeek.printDayOfTheWeek(7);
+        DayOfTheWeek.printDayOfTheWeek2(7);
     }
-    public static String showMessage(char letter){
-        return  "Letter " + letter +  " was found";
-    }
+//    public static String showMessage(char letter){
+//        return  "Letter " + letter +  " was found";
+//    }
 
 }
