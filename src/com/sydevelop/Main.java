@@ -65,8 +65,21 @@ public class Main {
 //        }
 
 
-        DayOfTheWeek.printDayOfTheWeek(7);
-        DayOfTheWeek.printDayOfTheWeek2(7);
+//        DayOfTheWeek.printDayOfTheWeek(7);
+//        DayOfTheWeek.printDayOfTheWeek2(7);
+
+        NumberInWord.printNumberInWord(-1);
+        NumberInWord.printNumberInWord(0);
+        NumberInWord.printNumberInWord(1);
+        NumberInWord.printNumberInWord(2);
+        NumberInWord.printNumberInWord(3);
+        NumberInWord.printNumberInWord(4);
+        NumberInWord.printNumberInWord(5);
+        NumberInWord.printNumberInWord(6);
+        NumberInWord.printNumberInWord(7);
+        NumberInWord.printNumberInWord(8);
+        NumberInWord.printNumberInWord(9);
+        NumberInWord.printNumberInWord(10);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
