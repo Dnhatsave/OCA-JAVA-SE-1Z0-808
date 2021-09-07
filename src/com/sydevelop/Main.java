@@ -34,10 +34,44 @@ public class Main {
 //        System.out.println(AreaCalculator.area(5.0, 4.0));
 //        System.out.println(AreaCalculator.area(-1.0, 4.0));
 
-        MinutesToYear.printYearsAndDays(525600);
-        MinutesToYear.printYearsAndDays(1051200);
-        MinutesToYear.printYearsAndDays(561600);
+//        MinutesToYear.printYearsAndDays(525600);
+//        MinutesToYear.printYearsAndDays(1051200);
+//        MinutesToYear.printYearsAndDays(561600);
 
+//          EqualityPrinter.printEqual(1, 1, 1);
+//          EqualityPrinter.printEqual(1, 1, 2);
+//          EqualityPrinter.printEqual(-1, -1, -1);
+//          EqualityPrinter.printEqual(1, 2, 3);
+
+//        PlayingCat.isCatPlaying(true,10);
+//        PlayingCat.isCatPlaying(false,36);
+//        PlayingCat.isCatPlaying(false,35);
+
+
+        char letter = 'F';
+
+        switch (letter){
+            case 'A':
+                System.out.println(showMessage(letter));
+                break;
+            case 'B':
+                System.out.println(showMessage(letter));
+                break;
+            case 'C':
+                System.out.println(showMessage(letter));
+                break;
+            case 'D':
+                System.out.println(showMessage(letter));
+                break;
+            case 'E':
+                System.out.println(showMessage(letter));
+                break;
+            default:
+                System.out.println("Letter not found try again!");
+        }
+    }
+    public static String showMessage(char letter){
+        return  "Letter " + letter +  " was found";
     }
 
 }
