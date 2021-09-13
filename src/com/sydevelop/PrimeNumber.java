@@ -20,10 +20,8 @@ public class PrimeNumber {
         for (int i=2; i<= range; i++){
             if(isPrime(i)){
                 count ++;
-                System.out.println( + i + " is Prime number");
-
+                System.out.println( "Numbber " + i + " is Prime number");
                 if(count ==10) break;
-
             }
         }
         System.out.println("____________________________");
