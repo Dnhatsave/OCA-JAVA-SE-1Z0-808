@@ -81,9 +81,10 @@ public class Main {
 //        NumberInWord.printNumberInWord(9);
 //        NumberInWord.printNumberInWord(10);
 
-      // PrimeNumber.printPrimeNumbers(10);
+//          PrimeNumber.printPrimeNumbers(10);
 
-        Sum5and3.printSum5and3();
+//        Sum5and3.printSum5and3();
+//        SumOdd.sumOdd(100,100);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
