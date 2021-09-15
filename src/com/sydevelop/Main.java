@@ -85,6 +85,10 @@ public class Main {
 
 //        Sum5and3.printSum5and3();
 //        SumOdd.sumOdd(100,100);
+
+//        DigitSum.sumDigits(2221);
+//        Palindrome.isPalindrome(2022);
+        FirstAndLastDigitSum.sumFirstAndLastDigit(5);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
