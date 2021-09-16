@@ -88,7 +88,8 @@ public class Main {
 
 //        DigitSum.sumDigits(2221);
 //        Palindrome.isPalindrome(2022);
-        FirstAndLastDigitSum.sumFirstAndLastDigit(5);
+//        FirstAndLastDigitSum.sumFirstAndLastDigit(50);
+        SumEvenDigit.getEvenDigitSum(208171);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
