@@ -90,7 +90,8 @@ public class Main {
 //        Palindrome.isPalindrome(2022);
 //        FirstAndLastDigitSum.sumFirstAndLastDigit(50);
 //        SumEvenDigit.getEvenDigitSum(208171);
-        GreatestCommonDivisor.getGreatestCommonDivisor(12,30);
+//        GreatestCommonDivisor.getGreatestCommonDivisor(12,30);
+        AllFactors.printFactors(6);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
