@@ -89,7 +89,8 @@ public class Main {
 //        DigitSum.sumDigits(2221);
 //        Palindrome.isPalindrome(2022);
 //        FirstAndLastDigitSum.sumFirstAndLastDigit(50);
-        SumEvenDigit.getEvenDigitSum(208171);
+//        SumEvenDigit.getEvenDigitSum(208171);
+        GreatestCommonDivisor.getGreatestCommonDivisor(12,30);
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
