@@ -1,6 +1,7 @@
 package com.sydevelop;
 
 import com.sydevelop.OOP.Car;
+import com.sydevelop.OOP.SimpleCalculator;
 
 public class Main {
 
@@ -97,11 +98,23 @@ public class Main {
 
 
         //OOP CHAPTER
-        Car car = new Car();
-        car.setModel("Wrangler");
-        System.out.println("The car mode is " + car.getNodel());
-        car.setModel("Sahara2");
-        System.out.println("The car mode is changed to " + car.getNodel());
+//        Car car = new Car();
+//        car.setModel("Wrangler");
+//        System.out.println("The car mode is " + car.getNodel());
+//        car.setModel("Sahara2");
+//        System.out.println("The car mode is changed to " + car.getNodel());
+
+
+        // OOP First Exercise
+        SimpleCalculator calculator = new SimpleCalculator();
+        calculator.setFirstNumber(5.0);
+        calculator.setSecondNumber(4);
+        System.out.println("add= " + calculator.getAdditionResult());
+        System.out.println("subtract= " + calculator.getSubtractionResult());
+        calculator.setFirstNumber(5.25);
+        calculator.setSecondNumber(0);
+        System.out.println("multiply= " + calculator.getMultiplicationResult());
+        System.out.println("divide= " + calculator.getDivisionResult());
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
