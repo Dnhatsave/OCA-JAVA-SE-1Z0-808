@@ -1,5 +1,7 @@
 package com.sydevelop;
 
+import com.sydevelop.OOP.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -91,7 +93,15 @@ public class Main {
 //        FirstAndLastDigitSum.sumFirstAndLastDigit(50);
 //        SumEvenDigit.getEvenDigitSum(208171);
 //        GreatestCommonDivisor.getGreatestCommonDivisor(12,30);
-        AllFactors.printFactors(6);
+//        AllFactors.printFactors(6);
+
+
+        //OOP CHAPTER
+        Car car = new Car();
+        car.setModel("Wrangler");
+        System.out.println("The car mode is " + car.getNodel());
+        car.setModel("Sahara2");
+        System.out.println("The car mode is changed to " + car.getNodel());
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
