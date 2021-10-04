@@ -28,6 +28,7 @@ public class Person {
     public void setAge(int age) {
         if(age < 0 || age > 100) age = 0;
          this.age = age;
+         //this.age = (age<0 || age>100) ? 0 : age; // ternary operator
     }
 
     public boolean isTeen(){

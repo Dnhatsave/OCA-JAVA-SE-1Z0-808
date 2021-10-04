@@ -1,5 +1,6 @@
 package com.sydevelop;
 
+import com.sydevelop.OOP.BankAccount;
 import com.sydevelop.OOP.Car;
 import com.sydevelop.OOP.Person;
 import com.sydevelop.OOP.SimpleCalculator;
@@ -118,18 +119,29 @@ public class Main {
 //        System.out.println("divide= " + calculator.getDivisionResult());
 
         // OOP Sencond Challenge Person
-        Person person = new Person();
-        person.setFirstName("");   // firstName is set to empty string
-        person.setLastName("");    // lastName is set to empty string
-        person.setAge(10);
-        System.out.println("fullName= " + person.getFullName());
-        System.out.println("teen= " + person.isTeen());
-        person.setFirstName("John");    // firstName is set to John
-        person.setAge(18);
-        System.out.println("fullName= " + person.getFullName());
-        System.out.println("teen= " + person.isTeen());
-        person.setLastName("Smith");    // lastName is set to Smith
-        System.out.println("fullName= " + person.getFullName());
+//        Person person = new Person();
+//        person.setFirstName("");   // firstName is set to empty string
+//        person.setLastName("");    // lastName is set to empty string
+//        person.setAge(10);
+//        System.out.println("fullName= " + person.getFullName());
+//        System.out.println("teen= " + person.isTeen());
+//        person.setFirstName("John");    // firstName is set to John
+//        person.setAge(18);
+//        System.out.println("fullName= " + person.getFullName());
+//        System.out.println("teen= " + person.isTeen());
+//        person.setLastName("Smith");    // lastName is set to Smith
+//        System.out.println("fullName= " + person.getFullName());
+
+        // OOP Bank Challenge
+        BankAccount dercioBCI = new BankAccount("Dercio Inacio Nhatsave",12312312,25000,"dercionhatsave@ruca.co.mz",876532342);
+
+        System.out.println("Your account balance is " + dercioBCI.getBalance());
+        System.out.println("Account info: ");
+        System.out.println("Account Number " + dercioBCI.getAccountNumber() + ", Name " + dercioBCI.getCostumerName());
+        System.out.println("E-mail: " + dercioBCI.getEmail() + ", Phone Number: " + dercioBCI.getPhoneNumber());
+
+        dercioBCI.deposit(5000);
+        System.out.println("Your account balance is " + dercioBCI.getBalance());
 
     }
 //    public static String showMessage(char letter){
