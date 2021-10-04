@@ -142,11 +142,17 @@ public class Main {
 
 
         // OOP VIP Costumer challenge
-        VipCostumer vip = new VipCostumer();
-        System.out.println( "Name " + vip.getName() + " Credit " + vip.getCreditLimit() + " email " + vip.getEmail()) ;
+//        VipCostumer vip = new VipCostumer();
+//        System.out.println( "Name " + vip.getName() + " Credit " + vip.getCreditLimit() + " email " + vip.getEmail()) ;
+//
+//        VipCostumer vip2 = new VipCostumer("Dercio","dercio dercio @gmail.com");
+//        System.out.println( "Name " + vip2.getName() + " Credit " + vip2.getCreditLimit() + " email " + vip2.getEmail()) ;
 
-        VipCostumer vip2 = new VipCostumer("Dercio","dercio dercio @gmail.com");
-        System.out.println( "Name " + vip2.getName() + " Credit " + vip2.getCreditLimit() + " email " + vip2.getEmail()) ;
+        // Inharitance methods
+        Animal animal = new Animal("Animal",1,1,5,5);
+        Dog dog = new Dog("Nick",8,20,2,4,1,20,"long silk");
+        dog.eat();
+        dog.run();
 
     }
 //    public static String showMessage(char letter){
