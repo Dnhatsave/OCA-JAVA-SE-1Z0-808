@@ -1,9 +1,6 @@
 package com.sydevelop;
 
-import com.sydevelop.OOP.BankAccount;
-import com.sydevelop.OOP.Car;
-import com.sydevelop.OOP.Person;
-import com.sydevelop.OOP.SimpleCalculator;
+import com.sydevelop.OOP.*;
 
 public class Main {
 
@@ -133,15 +130,23 @@ public class Main {
 //        System.out.println("fullName= " + person.getFullName());
 
         // OOP Bank Challenge
-        BankAccount dercioBCI = new BankAccount("Dercio Inacio Nhatsave",12312312,25000,"dercionhatsave@ruca.co.mz",876532342);
+//        BankAccount dercioBCI = new BankAccount("Dercio Inacio Nhatsave",12312312,25000,"dercionhatsave@ruca.co.mz",876532342);
+//
+//        System.out.println("Your account balance is " + dercioBCI.getBalance());
+//        System.out.println("Account info: ");
+//        System.out.println("Account Number " + dercioBCI.getAccountNumber() + ", Name " + dercioBCI.getCostumerName());
+//        System.out.println("E-mail: " + dercioBCI.getEmail() + ", Phone Number: " + dercioBCI.getPhoneNumber());
+//
+//        dercioBCI.deposit(5000);
+//        System.out.println("Your account balance is " + dercioBCI.getBalance());
 
-        System.out.println("Your account balance is " + dercioBCI.getBalance());
-        System.out.println("Account info: ");
-        System.out.println("Account Number " + dercioBCI.getAccountNumber() + ", Name " + dercioBCI.getCostumerName());
-        System.out.println("E-mail: " + dercioBCI.getEmail() + ", Phone Number: " + dercioBCI.getPhoneNumber());
 
-        dercioBCI.deposit(5000);
-        System.out.println("Your account balance is " + dercioBCI.getBalance());
+        // OOP VIP Costumer challenge
+        VipCostumer vip = new VipCostumer();
+        System.out.println( "Name " + vip.getName() + " Credit " + vip.getCreditLimit() + " email " + vip.getEmail()) ;
+
+        VipCostumer vip2 = new VipCostumer("Dercio","dercio dercio @gmail.com");
+        System.out.println( "Name " + vip2.getName() + " Credit " + vip2.getCreditLimit() + " email " + vip2.getEmail()) ;
 
     }
 //    public static String showMessage(char letter){
