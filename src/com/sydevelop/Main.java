@@ -149,10 +149,27 @@ public class Main {
 //        System.out.println( "Name " + vip2.getName() + " Credit " + vip2.getCreditLimit() + " email " + vip2.getEmail()) ;
 
         // Inharitance methods
-        Animal animal = new Animal("Animal",1,1,5,5);
-        Dog dog = new Dog("Nick",8,20,2,4,1,20,"long silk");
-        dog.eat();
-        dog.run();
+//        Animal animal = new Animal("Animal",1,1,5,5);
+//        Dog dog = new Dog("Nick",8,20,2,4,1,20,"long silk");
+//        dog.eat();
+//        dog.run();
+
+        // Car inheritance
+
+//        Car jeep = new Car(2,"V8 bi Turbo",4,"Diesel","Wrangler","black");
+//        System.out.println(jeep.getNodel() +  " with " + jeep.getEngine() );
+//        jeep.move(45);
+//        jeep.shifGear(4);
+
+        // Circle and Cilynder exercise
+        Circle circle = new Circle(3.75);
+        System.out.println("circle.radius= " + circle.getRadius());
+        System.out.println("circle.area= " + circle.getArea());
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+        System.out.println("cylinder.radius= " + cylinder.getRadius());
+        System.out.println("cylinder.height= " + cylinder.getHeight());
+        System.out.println("cylinder.area= " + cylinder.getArea());
+        System.out.println("cylinder.volume= " + cylinder.getVolume());
 
     }
 //    public static String showMessage(char letter){
