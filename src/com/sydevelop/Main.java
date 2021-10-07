@@ -1,6 +1,7 @@
 package com.sydevelop;
 
 import com.sydevelop.OOP.*;
+import com.sydevelop.OOP.Encapsulation.Printer;
 
 public class Main {
 
@@ -173,17 +174,24 @@ public class Main {
 
         // Rectangle and Cuboid Exercise
 
-        Rectangle rectangle = new Rectangle(5, 10);
-        System.out.println("rectangle.width= " + rectangle.getWidth());
-        System.out.println("rectangle.length= " + rectangle.getLength());
-        System.out.println("rectangle.area= " + rectangle.getArea());
-        Cuboid cuboid = new Cuboid(5,10,5);
-        System.out.println("cuboid.width= " + cuboid.getWidth());
-        System.out.println("cuboid.length= " + cuboid.getLength());
-        System.out.println("cuboid.area= " + cuboid.getArea());
-        System.out.println("cuboid.height= " + cuboid.getHeight());
-        System.out.println("cuboid.volume= " + cuboid.getVolume());
+//        Rectangle rectangle = new Rectangle(5, 10);
+//        System.out.println("rectangle.width= " + rectangle.getWidth());
+//        System.out.println("rectangle.length= " + rectangle.getLength());
+//        System.out.println("rectangle.area= " + rectangle.getArea());
+//        Cuboid cuboid = new Cuboid(5,10,5);
+//        System.out.println("cuboid.width= " + cuboid.getWidth());
+//        System.out.println("cuboid.length= " + cuboid.getLength());
+//        System.out.println("cuboid.area= " + cuboid.getArea());
+//        System.out.println("cuboid.height= " + cuboid.getHeight());
+//        System.out.println("cuboid.volume= " + cuboid.getVolume());
 
+        // Printer Encpasualation  challenge
+        Printer printer = new Printer(5,25,false);
+        printer.printPage(10);
+
+        printer.printPage(1);
+        printer.fillUpTonner(50);
+        printer.printPage(5);
 
     }
 //    public static String showMessage(char letter){
