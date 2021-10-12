@@ -2,6 +2,12 @@ package com.sydevelop;
 
 import com.sydevelop.OOP.*;
 import com.sydevelop.OOP.Encapsulation.Printer;
+import com.sydevelop.OOP.Polymorphism.CarPoly;
+import com.sydevelop.OOP.Polymorphism.Ford;
+import com.sydevelop.OOP.Polymorphism.Holden;
+import com.sydevelop.OOP.Polymorphism.Mitsubishi;
+
+import java.util.HashMap;
 
 public class Main {
 
@@ -186,12 +192,37 @@ public class Main {
 //        System.out.println("cuboid.volume= " + cuboid.getVolume());
 
         // Printer Encpasualation  challenge
-        Printer printer = new Printer(5,25,false);
-        printer.printPage(10);
+//        Printer printer = new Printer(5,25,false);
+//        printer.printPage(10);
+//
+//        printer.printPage(1);
+//        printer.fillUpTonner(50);
+//        printer.printPage(5);
 
-        printer.printPage(1);
-        printer.fillUpTonner(50);
-        printer.printPage(5);
+        // Polymorphism
+
+        CarPoly car = new CarPoly(8,"Base car");
+        System.out.println(car.startEngine());
+        System.out.println(car.accelerate());
+        System.out.println(car.brake());
+
+        Mitsubishi mitsubishi = new Mitsubishi(6,"Outlander VRK 4WD");
+        System.out.println(mitsubishi.startEngine());
+        System.out.println(mitsubishi.accelerate());
+        System.out.println(mitsubishi.brake());
+
+        Ford ford = new Ford(6, "Ford Falcon");
+        System.out.println(ford.startEngine());
+        System.out.println(ford.accelerate());
+        System.out.println(ford.brake());
+
+        Holden holden = new Holden(6, "Holden Commodore");
+        System.out.println(holden.startEngine());
+        System.out.println(holden.accelerate());
+        System.out.println(holden.brake());
+
+
+
 
     }
 //    public static String showMessage(char letter){
