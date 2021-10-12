@@ -1,13 +1,8 @@
 package com.sydevelop;
 
-import com.sydevelop.OOP.*;
-import com.sydevelop.OOP.Encapsulation.Printer;
-import com.sydevelop.OOP.Polymorphism.CarPoly;
-import com.sydevelop.OOP.Polymorphism.Ford;
-import com.sydevelop.OOP.Polymorphism.Holden;
-import com.sydevelop.OOP.Polymorphism.Mitsubishi;
-
-import java.util.HashMap;
+import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
+import com.sydevelop.OOP.MasterChallenge.Hamburger;
+import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
 
 public class Main {
 
@@ -201,25 +196,48 @@ public class Main {
 
         // Polymorphism
 
-        CarPoly car = new CarPoly(8,"Base car");
-        System.out.println(car.startEngine());
-        System.out.println(car.accelerate());
-        System.out.println(car.brake());
+//        CarPoly car = new CarPoly(8,"Base car");
+//        System.out.println(car.startEngine());
+//        System.out.println(car.accelerate());
+//        System.out.println(car.brake());
+//
+//        Mitsubishi mitsubishi = new Mitsubishi(6,"Outlander VRK 4WD");
+//        System.out.println(mitsubishi.startEngine());
+//        System.out.println(mitsubishi.accelerate());
+//        System.out.println(mitsubishi.brake());
+//
+//        Ford ford = new Ford(6, "Ford Falcon");
+//        System.out.println(ford.startEngine());
+//        System.out.println(ford.accelerate());
+//        System.out.println(ford.brake());
+//
+//        Holden holden = new Holden(6, "Holden Commodore");
+//        System.out.println(holden.startEngine());
+//        System.out.println(holden.accelerate());
+//        System.out.println(holden.brake());
 
-        Mitsubishi mitsubishi = new Mitsubishi(6,"Outlander VRK 4WD");
-        System.out.println(mitsubishi.startEngine());
-        System.out.println(mitsubishi.accelerate());
-        System.out.println(mitsubishi.brake());
+        //Master Challenge Burger
 
-        Ford ford = new Ford(6, "Ford Falcon");
-        System.out.println(ford.startEngine());
-        System.out.println(ford.accelerate());
-        System.out.println(ford.brake());
+        Hamburger hamburger = new Hamburger("Basic", "White","Sausage",5);
+        double price = hamburger.getItemsPrice();
+        hamburger.addHamburgerAddition1("Tomato", 1);
+        hamburger.addHamburgerAddition2("lettuce",2.0);
+        System.out.println(" Total price is " + hamburger.getItemsPrice());
 
-        Holden holden = new Holden(6, "Holden Commodore");
-        System.out.println(holden.startEngine());
-        System.out.println(holden.accelerate());
-        System.out.println(holden.brake());
+        HealtyBurger healtyBurger = new HealtyBurger("Becaon",2);
+        healtyBurger.addHamburgerAddition1("Egg",4);
+        healtyBurger.addHealtyAddition1("Sauce",1);
+        healtyBurger.addHealtyAddition2("Lettis",3);
+        System.out.println(" Total price is " + healtyBurger.getItemsPrice());
+
+        DeluxeBurger db = new DeluxeBurger();
+        db.getItemsPrice();
+        db.addHamburgerAddition3("Buggs Bunny", 40);
+        System.out.println(" Total price is " + db.getItemsPrice());
+
+
+
+
 
 
 
