@@ -1,5 +1,7 @@
 package com.sydevelop;
 
+import com.sydevelop.Arrays.AvarageArray;
+import com.sydevelop.Arrays.SortArray;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
@@ -218,24 +220,34 @@ public class Main {
 
         //Master Challenge Burger
 
-        Hamburger hamburger = new Hamburger("Basic", "White","Sausage",5);
-        double price = hamburger.getItemsPrice();
-        hamburger.addHamburgerAddition1("Tomato", 1);
-        hamburger.addHamburgerAddition2("lettuce",2.0);
-        System.out.println(" Total price is " + hamburger.getItemsPrice());
+//        Hamburger hamburger = new Hamburger("Basic", "White","Sausage",5);
+//        double price = hamburger.getItemsPrice();
+//        hamburger.addHamburgerAddition1("Tomato", 1);
+//        hamburger.addHamburgerAddition2("lettuce",2.0);
+//        System.out.println(" Total price is " + hamburger.getItemsPrice());
+//
+//        HealtyBurger healtyBurger = new HealtyBurger("Becaon",2);
+//        healtyBurger.addHamburgerAddition1("Egg",4);
+//        healtyBurger.addHealtyAddition1("Sauce",1);
+//        healtyBurger.addHealtyAddition2("Lettis",3);
+//        System.out.println(" Total price is " + healtyBurger.getItemsPrice());
+//
+//        DeluxeBurger db = new DeluxeBurger();
+//        db.getItemsPrice();
+//        db.addHamburgerAddition3("Buggs Bunny", 40);
+//        System.out.println(" Total price is " + db.getItemsPrice());
 
-        HealtyBurger healtyBurger = new HealtyBurger("Becaon",2);
-        healtyBurger.addHamburgerAddition1("Egg",4);
-        healtyBurger.addHealtyAddition1("Sauce",1);
-        healtyBurger.addHealtyAddition2("Lettis",3);
-        System.out.println(" Total price is " + healtyBurger.getItemsPrice());
 
-        DeluxeBurger db = new DeluxeBurger();
-        db.getItemsPrice();
-        db.addHamburgerAddition3("Buggs Bunny", 40);
-        System.out.println(" Total price is " + db.getItemsPrice());
+        // Arrays
+//        AvarageArray arrays = new AvarageArray();
+//        arrays.printArr();
 
+        // Sorted Arrays Challenge
 
+        SortArray array = new SortArray();
+        int[] myIntArray = array.getIntegers(5);
+        int[] sort = array.sortIntegers(myIntArray);
+        array.printArrays(sort);
 
 
 

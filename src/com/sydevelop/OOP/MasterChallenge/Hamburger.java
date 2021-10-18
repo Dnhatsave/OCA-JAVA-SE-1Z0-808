@@ -58,7 +58,7 @@ public class Hamburger {
             System.out.println(addItemName2 + " was added, cost " + addItemPrice2);
             total += this.addItemPrice2;
         }
-        if(addItemName3 != null){
+        if(addItemName3 !=  null){
             System.out.println(addItemName3 + " was added, cost " + addItemPrice3);
             total += this.addItemPrice3;
         }
