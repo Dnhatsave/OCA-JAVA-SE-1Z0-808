@@ -2,10 +2,13 @@ package com.sydevelop;
 
 import com.sydevelop.Arrays.AvarageArray;
 import com.sydevelop.Arrays.MinimunElementChallenge;
+import com.sydevelop.Arrays.ReverseArray;
 import com.sydevelop.Arrays.SortArray;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -251,14 +254,22 @@ public class Main {
 //        array.printArrays(sort);
 
         // Minimun array
+//
+//        MinimunElementChallenge minArray = new MinimunElementChallenge();
+//        System.out.println("Enter Count:");
+//        int count = minArray.scanner.nextInt();
+//        int[] returnedArray = minArray.readIntegers(count);
+//        int returnedMin = minArray.findMin(returnedArray);
+//        System.out.println("The minimun value of array is " + returnedMin);
 
-        MinimunElementChallenge minArray = new MinimunElementChallenge();
-        System.out.println("Enter Count:");
-        int count = minArray.scanner.nextInt();
-        int[] returnedArray = minArray.readIntegers(count);
-        int returnedMin = minArray.findMin(returnedArray);
-        System.out.println("The minimun value of array is " + returnedMin);
+        // Reverse Array Challenge
+        int[] array = {1,5,3,7,11,9,15};
 
+        System.out.println("Array = " + Arrays.toString(array));
+
+        ReverseArray reverseArray = new ReverseArray();
+        reverseArray.reverse(array);
+        System.out.println("Reversed Array = " + Arrays.toString(array));
 
 
 
