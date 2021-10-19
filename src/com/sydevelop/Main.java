@@ -1,6 +1,7 @@
 package com.sydevelop;
 
 import com.sydevelop.Arrays.AvarageArray;
+import com.sydevelop.Arrays.MinimunElementChallenge;
 import com.sydevelop.Arrays.SortArray;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
@@ -243,12 +244,20 @@ public class Main {
 //        arrays.printArr();
 
         // Sorted Arrays Challenge
+//
+//        SortArray array = new SortArray();
+//        int[] myIntArray = array.getIntegers(5);
+//        int[] sort = array.sortIntegers(myIntArray);
+//        array.printArrays(sort);
 
-        SortArray array = new SortArray();
-        int[] myIntArray = array.getIntegers(5);
-        int[] sort = array.sortIntegers(myIntArray);
-        array.printArrays(sort);
+        // Minimun array
 
+        MinimunElementChallenge minArray = new MinimunElementChallenge();
+        System.out.println("Enter Count:");
+        int count = minArray.scanner.nextInt();
+        int[] returnedArray = minArray.readIntegers(count);
+        int returnedMin = minArray.findMin(returnedArray);
+        System.out.println("The minimun value of array is " + returnedMin);
 
 
 

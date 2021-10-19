@@ -27,6 +27,7 @@ public class SortArray {
                     sortedArray[i+1] = temp;
                     flag = true;
                 }
+
             }
         }
         return sortedArray;
