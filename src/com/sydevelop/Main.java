@@ -1,5 +1,6 @@
 package com.sydevelop;
 
+import com.sydevelop.ArrayList.GroceryList;
 import com.sydevelop.Arrays.AvarageArray;
 import com.sydevelop.Arrays.MinimunElementChallenge;
 import com.sydevelop.Arrays.ReverseArray;
@@ -9,10 +10,13 @@ import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
-
+    private static Scanner scanner = new Scanner(System.in);
+    private static GroceryList groceryList = new GroceryList();
     public static void main(String[] args) {
+
 //        SpeedConverter.printConversion(1.5);
 //        SpeedConverter.printConversion(10.25);
 //        SpeedConverter.printConversion(-5.6);
@@ -262,18 +266,94 @@ public class Main {
 //        int returnedMin = minArray.findMin(returnedArray);
 //        System.out.println("The minimun value of array is " + returnedMin);
 
-        // Reverse Array Challenge
-        int[] array = {1,5,3,7,11,9,15};
+//        // Reverse Array Challenge
+//        int[] array = {1,5,3,7,11,9,15};
+//
+//        System.out.println("Array = " + Arrays.toString(array));
+//
+//        ReverseArray reverseArray = new ReverseArray();
+//        reverseArray.reverse(array);
+//        System.out.println("Reversed Array = " + Arrays.toString(array));
 
-        System.out.println("Array = " + Arrays.toString(array));
+        // Array List
 
-        ReverseArray reverseArray = new ReverseArray();
-        reverseArray.reverse(array);
-        System.out.println("Reversed Array = " + Arrays.toString(array));
+        boolean quit = false;
+        int choice = 0;
+        printInstructions();
 
+        while (!quit){
+            System.out.println("Enter your choice: ");
+            choice = scanner.nextInt();
+            scanner.nextLine();
 
+            switch (choice){
+                case 0:
+                    printInstructions();
+                    break;
+                case 1:
+                    groceryList.printList();
+                    break;
+                case 2:
+                    add();
+                    break;
+                case 3:
+                    updateItem();
+                    break;
+                case 4:
+                    removeItem();
+                    break;
+                case 5:
+                    searchItem();
+                    break;
+                case 6:
+                    quit = true;
+                    break;
+            }
+        }
+    }
 
+    // ArrayList Sub Methods
+    public static void printInstructions(){
+        System.out.println("\nPress");
+        System.out.println("\t 0 - To print choice options.");
+        System.out.println("\t 1 - To print the list of grocery items.");
+        System.out.println("\t 2 - To add an item to the list.");
+        System.out.println("\t 3 - To modify an item in the list.");
+        System.out.println("\t 4 - To remove an item from the list.");
+        System.out.println("\t 5 - To search for an item in the list.");
+        System.out.println("\t 6 - To quit the application.");
 
+    }
+    public static void add(){
+        System.out.println("Please enter the item: ");
+        groceryList.addItem(scanner.nextLine());
+    }
+
+    public static void updateItem(){
+        System.out.println("Enter item number: ");
+        int itemNo = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Enter replacement item: ");
+        String newItem = scanner.nextLine();
+        groceryList.updateList(itemNo -1,newItem);
+
+    }
+
+    public static void removeItem(){
+        System.out.println("Enter item number: ");
+        int itemNo = scanner.nextInt();
+        scanner.nextLine();
+        groceryList.removeItem(itemNo -1);
+    }
+
+    public static void searchItem(){
+        System.out.println("Item to seach for: ");
+        String searchItem = scanner.nextLine();
+        if (groceryList.findItem(searchItem) != null){
+            System.out.println("Found " + searchItem + " in our group");
+        }else{
+            System.out.println( searchItem + " is not in the list");
+        }
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
