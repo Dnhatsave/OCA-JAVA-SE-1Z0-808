@@ -5,10 +5,16 @@ import com.sydevelop.Arrays.AvarageArray;
 import com.sydevelop.Arrays.MinimunElementChallenge;
 import com.sydevelop.Arrays.ReverseArray;
 import com.sydevelop.Arrays.SortArray;
+import com.sydevelop.Interfaces.DeskPhone;
+import com.sydevelop.Interfaces.ITelephone;
+import com.sydevelop.Interfaces.MobilePhone;
+import com.sydevelop.LinkedList.Costumer;
+import com.sydevelop.LinkedList.Demo;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -277,39 +283,77 @@ public class Main {
 
         // Array List
 
-        boolean quit = false;
-        int choice = 0;
-        printInstructions();
+//        boolean quit = false;
+//        int choice = 0;
+//        printInstructions();
+//
+//        while (!quit){
+//            System.out.println("Enter your choice: ");
+//            choice = scanner.nextInt();
+//            scanner.nextLine();
+//
+//            switch (choice){
+//                case 0:
+//                    printInstructions();
+//                    break;
+//                case 1:
+//                    groceryList.printList();
+//                    break;
+//                case 2:
+//                    add();
+//                    break;
+//                case 3:
+//                    updateItem();
+//                    break;
+//                case 4:
+//                    removeItem();
+//                    break;
+//                case 5:
+//                    searchItem();
+//                    break;
+//                case 6:
+//                    quit = true;
+//                    break;
+//            }
+//        }
 
-        while (!quit){
-            System.out.println("Enter your choice: ");
-            choice = scanner.nextInt();
-            scanner.nextLine();
+        // Linked List
+//        Costumer costumer = new Costumer("Tim",54.96);
+//        Costumer anotherCostumer = costumer;
+//        anotherCostumer.setBalance(12.18);
+//        System.out.println("Balance for costumer " + costumer.getName() +  " is " + costumer.getBalance());
+//
+//        ArrayList<Integer> intList = new ArrayList<Integer>();
+//
+//        intList.add(1);
+//        intList.add(3);
+//        intList.add(4);
+//
+//        for (int i = 0; i < intList.size(); i++) {
+//            System.out.println(i + ": " + intList.get(i));
+//        }
+//
+//        intList.add(1,2);
+//
+//        for (int i = 0; i < intList.size(); i++) {
+//            System.out.println(i + ": " + intList.get(i));
+//        }
 
-            switch (choice){
-                case 0:
-                    printInstructions();
-                    break;
-                case 1:
-                    groceryList.printList();
-                    break;
-                case 2:
-                    add();
-                    break;
-                case 3:
-                    updateItem();
-                    break;
-                case 4:
-                    removeItem();
-                    break;
-                case 5:
-                    searchItem();
-                    break;
-                case 6:
-                    quit = true;
-                    break;
-            }
-        }
+//        Demo demo = new Demo();
+//        demo.addList();
+
+        // Interface
+
+        ITelephone derciosPhone;
+        derciosPhone = new DeskPhone(846896843);
+        derciosPhone.powerOn();
+        derciosPhone.callPhone(846896843);
+        derciosPhone.answer();
+
+        derciosPhone = new MobilePhone(826896843);
+        derciosPhone.powerOn();
+        derciosPhone.callPhone(826896843);
+        derciosPhone.answer();
     }
 
     // ArrayList Sub Methods

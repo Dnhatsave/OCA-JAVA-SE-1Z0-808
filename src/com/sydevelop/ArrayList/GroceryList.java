@@ -11,7 +11,7 @@ public class GroceryList {
     }
 
     public void printList(){
-        System.out.println("You have " + groceryList.size() + " itens in your list");
+        System.out.println("You have " + groceryList.size() + " Items in your list");
         for (int i = 0; i < groceryList.size(); i++) {
             System.out.println( (i+1)+  ". " + groceryList.get(i));
         }
