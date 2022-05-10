@@ -13,6 +13,8 @@ import com.sydevelop.LinkedList.Demo;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
+import com.sydevelop.TesteJava.NumberToString;
+import com.sydevelop.TesteJava.PasTras;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -344,16 +346,26 @@ public class Main {
 
         // Interface
 
-        ITelephone derciosPhone;
-        derciosPhone = new DeskPhone(846896843);
-        derciosPhone.powerOn();
-        derciosPhone.callPhone(846896843);
-        derciosPhone.answer();
+//        ITelephone derciosPhone;
+//        derciosPhone = new DeskPhone(846896843);
+//        derciosPhone.powerOn();
+//        derciosPhone.callPhone(846896843);
+//        derciosPhone.answer();
+//
+//        derciosPhone = new MobilePhone(826896843);
+//        derciosPhone.powerOn();
+//        derciosPhone.callPhone(826896843);
+//        derciosPhone.answer();
 
-        derciosPhone = new MobilePhone(826896843);
-        derciosPhone.powerOn();
-        derciosPhone.callPhone(826896843);
-        derciosPhone.answer();
+        // pastras
+
+//        PasTras pasTras = new PasTras();
+//        pasTras.calculateFactorial();
+
+//        NumbersToWord.numberToWord(3450);
+//        NumberToString.getNumberAsString();
+
+        MinAndMaxInputChallenge.MinAndMaxInput();
     }
 
     // ArrayList Sub Methods
