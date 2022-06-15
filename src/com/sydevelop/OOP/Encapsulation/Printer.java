@@ -12,7 +12,7 @@ public class Printer {
     }
 
     public void fillUpTonner(int tonner){
-        System.out.println("The tonner lever was incresead from " + tonnerLevel + " To " + tonnerLevel + tonner);
+        System.out.println("The tonner lever was incresead from " + tonnerLevel + " To " +  tonner);
         this.tonnerLevel += tonner;
     }
 
@@ -27,7 +27,7 @@ public class Printer {
                     System.out.println("Print  current page " + i + " of " + numberPages);
                     this.tonnerLevel--;
                     if (tonnerLevel < 0){
-                        System.out.println("Insuficient tonner level please fellup to print");
+                        System.out.println("Stop Printing... Insuficient tonner level");
                         break;
                     }
                 }

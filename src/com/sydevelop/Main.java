@@ -1,21 +1,30 @@
 package com.sydevelop;
 
+import com.sydevelop.ArrayList.Contacts;
 import com.sydevelop.ArrayList.GroceryList;
+import com.sydevelop.ArrayList.MobilePhone;
 import com.sydevelop.Arrays.AvarageArray;
 import com.sydevelop.Arrays.MinimunElementChallenge;
 import com.sydevelop.Arrays.ReverseArray;
 import com.sydevelop.Arrays.SortArray;
 import com.sydevelop.Interfaces.DeskPhone;
 import com.sydevelop.Interfaces.ITelephone;
-import com.sydevelop.Interfaces.MobilePhone;
 import com.sydevelop.LinkedList.Costumer;
 import com.sydevelop.LinkedList.Demo;
+import com.sydevelop.OOP.BankChallenge;
+import com.sydevelop.OOP.Encapsulation.Printer;
 import com.sydevelop.OOP.MasterChallenge.DeluxeBurger;
 import com.sydevelop.OOP.MasterChallenge.Hamburger;
 import com.sydevelop.OOP.MasterChallenge.HealtyBurger;
+import com.sydevelop.OOP.Polymorphism.CarPoly;
+import com.sydevelop.OOP.Polymorphism.Ford;
+import com.sydevelop.OOP.Polymorphism.Holden;
+import com.sydevelop.OOP.Polymorphism.Mitsubishi;
+import com.sydevelop.OOP.Traings;
 import com.sydevelop.TesteJava.NumberToString;
 import com.sydevelop.TesteJava.PasTras;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -23,6 +32,8 @@ import java.util.Scanner;
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
     private static GroceryList groceryList = new GroceryList();
+    private static MobilePhone mobilePhone = new MobilePhone();
+
     public static void main(String[] args) {
 
 //        SpeedConverter.printConversion(1.5);
@@ -213,11 +224,12 @@ public class Main {
 //        printer.printPage(5);
 
         // Polymorphism
-
+//
 //        CarPoly car = new CarPoly(8,"Base car");
 //        System.out.println(car.startEngine());
 //        System.out.println(car.accelerate());
 //        System.out.println(car.brake());
+//        System.out.println( "Cilynders " + car.getCylinders());
 //
 //        Mitsubishi mitsubishi = new Mitsubishi(6,"Outlander VRK 4WD");
 //        System.out.println(mitsubishi.startEngine());
@@ -233,6 +245,8 @@ public class Main {
 //        System.out.println(holden.startEngine());
 //        System.out.println(holden.accelerate());
 //        System.out.println(holden.brake());
+//        System.out.println( "Cilynders " + holden.getCylinders());
+
 
         //Master Challenge Burger
 
@@ -365,50 +379,178 @@ public class Main {
 //        NumbersToWord.numberToWord(3450);
 //        NumberToString.getNumberAsString();
 
-        MinAndMaxInputChallenge.MinAndMaxInput();
+//        MinAndMaxInputChallenge.MinAndMaxInput();
+//
+//        BankChallenge bank = new BankChallenge();
+//        bank.setCostumerName("Dercio Nhatsave");
+//        bank.setAccountNumber(12312344);
+//        bank.setCellPhone(846786843);
+//        bank.setEmail("dercionhatsave@gmail.com");
+//        bank.setBalance(290.00);
+//
+//        System.out.println("Dear client " + bank.getCostumerName() + " you have " +
+//                bank.getBalance() + " MT " + " at your account number " + bank.getAccountNumber());
+//
+//        //bank.depositFound();
+//        double amount = bank.withDrawal2(293);
+//        System.out.println(" Operation successfully " + bank.getAccountNumber() +  " current balance is " + amount);
+
+
+//
+
+        boolean quit = false;
+        printInstructions();
+        while (!quit) {
+            System.out.println("Enter your choice: (0 to show available options) ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice){
+                case 0:
+                    printInstructions();
+                    break;
+                case 1:
+                    mobilePhone.printList();
+                    break;
+                case 2:
+                    add();
+                    break;
+                case 3:
+                    updateItem();
+                    break;
+                case 4:
+                    removeItem();
+                    break;
+                case 5:
+                    searchItem();
+                    break;
+                case 6:
+                    System.out.println("Bye Bye :) ...");
+                    quit = true;
+                    break;
+            }
+        }
+
+    }
+
+    public static int[] getArray(int values){
+        System.out.println("Enter Integer number: \n");
+        int[] array = new int[values];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
+        return array;
+    }
+    public static void printArray(int[] array){
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Element " + i + ", value is "+ array[i] );
+        }
+    }
+
+    public static double getAvarange(int[] array){
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return (double) sum / (double) array.length;
+    }
+
+    public static int[] sortArray(int[] oldArray){
+        int[] newArray = new int[oldArray.length];
+        for (int i = 0; i < oldArray.length; i++) {
+            newArray[i] = oldArray[i];
+        }
+
+        // Descending order
+
+        for (int i = oldArray.length; i >= 0; i--) {
+            oldArray[i] = newArray[i];
+        }
+        return newArray;
     }
 
     // ArrayList Sub Methods
     public static void printInstructions(){
         System.out.println("\nPress");
         System.out.println("\t 0 - To print choice options.");
-        System.out.println("\t 1 - To print the list of grocery items.");
-        System.out.println("\t 2 - To add an item to the list.");
-        System.out.println("\t 3 - To modify an item in the list.");
-        System.out.println("\t 4 - To remove an item from the list.");
-        System.out.println("\t 5 - To search for an item in the list.");
+        System.out.println("\t 1 - To print the list of contacts.");
+        System.out.println("\t 2 - To add an contact to the list.");
+        System.out.println("\t 3 - To modify an contact in the list.");
+        System.out.println("\t 4 - To remove an contact from the list.");
+        System.out.println("\t 5 - To search for an contact name in the list.");
         System.out.println("\t 6 - To quit the application.");
 
     }
     public static void add(){
-        System.out.println("Please enter the item: ");
-        groceryList.addItem(scanner.nextLine());
+        System.out.println("Please enter the contact name: ");
+        String name = scanner.nextLine();
+        System.out.println("Please enter the contact number: ");
+        String contact = scanner.nextLine();
+        Contacts contacts = Contacts.createContact(name,contact);
+        if(mobilePhone.add(contacts)){
+            System.out.println("Contact sucessfully created");
+        } else{
+            System.out.println("Error while creating contact created");
+        }
     }
 
     public static void updateItem(){
-        System.out.println("Enter current item name: ");
-        String itemNo = scanner.nextLine();
-        scanner.nextLine();
-        System.out.println("Enter replacement item: ");
-        String newItem = scanner.nextLine();
-        groceryList.updateList(itemNo,newItem);
+        System.out.println("Enter existing Contact name: ");
+        String contactName = scanner.nextLine();
+        Contacts existingContactRecord = mobilePhone.queryContact(contactName);
+
+        if (existingContactRecord == null){
+            System.out.println("Contact not found...");
+            return;
+        }
+
+        System.out.println("Enter new contact name");
+        String newName = scanner.nextLine();
+
+        System.out.println("Enter new Contact number");
+        String newNumber = scanner.nextLine();
+
+//        Contacts existingNewContactRecord = mobilePhone.queryContact(newName);
+//
+//        if ()
+       Contacts newContact = Contacts.createContact(newName,newNumber);
+
+        if (mobilePhone.update(existingContactRecord,newContact)) {
+            System.out.println("Successfully updated Record");
+        }else{
+            System.out.println("Error while update the record");
+        }
 
     }
 
+
     public static void removeItem(){
-        System.out.println("Enter item name: ");
-        String item = scanner.nextLine();
-        groceryList.removeItem(item);
+        System.out.println("Enter contact name: ");
+        String name = scanner.nextLine();
+
+        Contacts existingContactRecord = mobilePhone.queryContact(name);
+
+        if (existingContactRecord == null){
+            System.out.println("Contact not found");
+            return;
+        }
+        mobilePhone.remove(existingContactRecord);
     }
 
     public static void searchItem(){
-        System.out.println("Item to seach for: ");
-        String searchItem = scanner.nextLine();
-        if (groceryList.onFile(searchItem)){
-            System.out.println("Found " + searchItem + " in list");
-        }else{
-            System.out.println( searchItem + " is not in the list");
+        System.out.println("Enter contact name: ");
+        String name = scanner.nextLine();
+
+        Contacts existingContactRecord = mobilePhone.queryContact(name);
+
+        if (existingContactRecord == null){
+            System.out.println("Contact not found");
+            return;
         }
+        System.out.println("Name: " + existingContactRecord.getName() + " \n "
+            + "Phone Number: " + existingContactRecord.getPhoneNumber());
     }
 //    public static String showMessage(char letter){
 //        return  "Letter " + letter +  " was found";
