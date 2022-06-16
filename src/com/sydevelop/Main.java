@@ -1,5 +1,6 @@
 package com.sydevelop;
 
+import com.sydevelop.ArrayList.Bank;
 import com.sydevelop.ArrayList.Contacts;
 import com.sydevelop.ArrayList.GroceryList;
 import com.sydevelop.ArrayList.MobilePhone;
@@ -396,41 +397,61 @@ public class Main {
 //        System.out.println(" Operation successfully " + bank.getAccountNumber() +  " current balance is " + amount);
 
 
+////
 //
+//        boolean quit = false;
+//        printInstructions();
+//        while (!quit) {
+//            System.out.println("Enter your choice: (0 to show available options) ");
+//
+//            int choice = scanner.nextInt();
+//            scanner.nextLine();
+//
+//            switch (choice){
+//                case 0:
+//                    printInstructions();
+//                    break;
+//                case 1:
+//                    mobilePhone.printList();
+//                    break;
+//                case 2:
+//                    add();
+//                    break;
+//                case 3:
+//                    updateItem();
+//                    break;
+//                case 4:
+//                    removeItem();
+//                    break;
+//                case 5:
+//                    searchItem();
+//                    break;
+//                case 6:
+//                    System.out.println("Bye Bye :) ...");
+//                    quit = true;
+//                    break;
+//            }
+//        }
 
-        boolean quit = false;
-        printInstructions();
-        while (!quit) {
-            System.out.println("Enter your choice: (0 to show available options) ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+        // bank AutoBoxing and Uboxing Challenge
 
-            switch (choice){
-                case 0:
-                    printInstructions();
-                    break;
-                case 1:
-                    mobilePhone.printList();
-                    break;
-                case 2:
-                    add();
-                    break;
-                case 3:
-                    updateItem();
-                    break;
-                case 4:
-                    removeItem();
-                    break;
-                case 5:
-                    searchItem();
-                    break;
-                case 6:
-                    System.out.println("Bye Bye :) ...");
-                    quit = true;
-                    break;
-            }
-        }
+        Bank bank = new Bank("BCI");
+        bank.addNewBrach("Av. 24 julho");
+
+        bank.addCostumer("Av. 24 julho", "Dercio Nhatsave", 20000000.0);
+        bank.addCostumer("Av. 24 julho", "Cleyda Nhatsave", 3999003240.0);
+        bank.addCostumer("Av. 24 julho", "Juliao Jubileu", 34556);
+
+        bank.addNewBrach("Sofala");
+        bank.addCostumer("Sofala", "Sofia Agostinho", 556);
+
+        bank.addCostumerTransaction("Av. 24 julho", "Dercio Nhatsave", 5000.0);
+        bank.addCostumerTransaction("Av. 24 julho", "Dercio Nhatsave", 900.0);
+        bank.addCostumerTransaction("Av. 24 julho", "Juliao Jubileu", 15000.0);
+
+        bank.listCostumers("Av. 24 julho", true);
+
 
     }
 
